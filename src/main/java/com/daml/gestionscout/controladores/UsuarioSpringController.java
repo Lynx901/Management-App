@@ -63,6 +63,15 @@ public class UsuarioSpringController {
         model.addAttribute("usuario", u);
         return "admin/perfil";
     }
+    
+    /* POST para editar un usuario */
+    @RequestMapping(value = "/perfil", method = RequestMethod.POST)
+    public String editarUsuario(@ModelAttribute("usuario") @Valid Usuario u,
+                                BindingResult result,
+                                ModelMap model) {
+        //usuariosDAO.editar(u);
+        return "admin/perfil";
+    }
 
     /* GET para registrar un usuario */
     @RequestMapping(value = "/registro", method = RequestMethod.GET)

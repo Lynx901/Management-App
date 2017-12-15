@@ -25,8 +25,8 @@
         <%@include file="/WEB-INF/layout/cabecera.jspf" %>       
         
         <c:if test="${empty pageContext.request.remoteUser}">
-            <main class="columns is-centered">
-                <div class="panel is-8">
+            <main class="columns">
+                <div class="panel">
                     <a href="<c:url value='/inicio/admin/registro'/>" class="button is-info is-outlined">Registro</a>
                     <a href="<c:url value='/inicio/admin/perfil'/>" class="button is-info is-outlined">Iniciar Sesión</a>
                 </div>
