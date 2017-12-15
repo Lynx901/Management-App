@@ -26,7 +26,7 @@
         
         <c:if test="${empty pageContext.request.remoteUser}">
             <main class="columns is-centered">
-                <div class="panel is-8">
+                <div class="panel">
                     <a href="<c:url value='/inicio/admin/registro'/>" class="button is-info is-outlined">Registro</a>
                     <a href="<c:url value='/inicio/admin/perfil'/>" class="button is-info is-outlined">Iniciar Sesión</a>
                 </div>
@@ -34,7 +34,7 @@
         </c:if>
         <c:if test="${not empty pageContext.request.remoteUser}">
             <main class="columns">
-                <div class="panel is-8">
+                <div class="panel is-12">
                     <table class="table is-hoverable is-fullwidth">
                     <thead>
                         <tr>

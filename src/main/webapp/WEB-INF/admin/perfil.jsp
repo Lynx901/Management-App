@@ -20,6 +20,10 @@
         <link rel="stylesheet" href="<c:url value='/css/main.css'/>">
     </head>
     <body>
+        
+        <%@include file="/WEB-INF/layout/cabecera.jspf" %> 
+        
+        
         <div class="columns">
             <div class="panel">
                 <div class="panel-heading">
@@ -65,6 +69,6 @@
             </div>
 
         </div>
-
+<%@include file="/WEB-INF/layout/footer.jspf" %>  
     </body>
 </html>

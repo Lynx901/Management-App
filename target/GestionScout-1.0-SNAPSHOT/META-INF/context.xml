@@ -1,24 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Context antiResourceLocking="true" path="/GestionScout">
-    <Resource auth="Container" 
-              driverClassName="org.apache.derby.jdbc.ClientDriver" 
-              maxActive="25" 
-              name="jdbc/GestionScout" 
-              password="dani" 
-              type="javax.sql.DataSource" 
-              url="jdbc:derby://localhost:1527/scout" 
-              username="dani"/>
-    
-    <Realm className="org.apache.catalina.realm.DataSourceRealm" 
-             dataSourceName="jdbc/GestionScout" 
-             localDataSource="true" 
-             roleNameCol="rol" 
-             userCredCol="clave" 
-             userNameCol="usuario" 
-             userRoleTable="roles" 
-             userTable="users"/>
-    
-    
+  <Resource auth="Container" driverClassName="org.apache.derby.jdbc.ClientDriver" maxActive="25" name="jdbc/GestionScout" password="dani" type="javax.sql.DataSource" url="jdbc:derby://localhost:1527/scout" username="dani"/>
+  <Realm className="org.apache.catalina.realm.DataSourceRealm" dataSourceName="jdbc/GestionScout" localDataSource="true" roleNameCol="rol" userCredCol="clave" userNameCol="usuario" userRoleTable="roles" userTable="users"/>
   <!--Tomcat File Auth Realm-->
   <!--<context path="/GestionScout">
         <Realm classname="org.apache.catalina.realm.UserDatabaseRealm"
