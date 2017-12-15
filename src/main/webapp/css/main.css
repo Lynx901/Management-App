@@ -1,0 +1,39 @@
+.menu {
+    padding: 20px;
+    background-color: #eee;
+    display: flex;
+}
+
+.box {
+    border-radius: 0px;
+}
+
+body {
+    background-color: #622599;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer {
+    background-color: #eee;
+    padding: 3rem 1.5rem 3rem;
+    box-shadow: 0px 0px 5px 7px rgba(0,0,0,0.2);
+}
+
+.navbar {
+    box-shadow: 0px 0px 5px 7px rgba(0,0,0,0.2);
+}
+
+.columns {
+    margin: 1.5rem;
+}
+
+.panel {
+    background-color: white;
+    padding: 30px;
+    box-shadow: 0px 0px 5px 5px rgba(0,0,0,0.2);
+}
+
+.error {
+    color: red;
+}
