@@ -23,5 +23,6 @@ public interface UsuarioDAO {
     boolean nuevoUsuario(Usuario u);
     Usuario encontrarPorID(int id);
     Usuario encontrarPorLogin(String user);
+    boolean eliminar(Usuario u);
  
 }

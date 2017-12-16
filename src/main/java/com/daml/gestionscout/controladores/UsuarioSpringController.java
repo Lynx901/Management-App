@@ -54,6 +54,12 @@ public class UsuarioSpringController {
         model.addAttribute("imgUrl", request.getContextPath() + "/img");
     }
     
+    /* GET para mostrar el index*/
+    @RequestMapping(value = "/", method = RequestMethod.GET)
+    public String homepage() {
+        return "index";
+    }
+    
 
     /* GET para mostrar el perfil*/
     @RequestMapping(value = "/perfil", method = RequestMethod.GET)
@@ -64,14 +70,15 @@ public class UsuarioSpringController {
         return "admin/perfil";
     }
     
-    /* POST para editar un usuario */
+    /* POST para eliminar un usuario */
     @RequestMapping(value = "/perfil", method = RequestMethod.POST)
-    public String editarUsuario(@ModelAttribute("usuario") @Valid Usuario u,
+    public String editarUsuario(@ModelAttribute("usuario") Usuario u,
                                 BindingResult result,
                                 ModelMap model) {
-        //usuariosDAO.editar(u);
-        return "admin/perfil";
+        usuariosDAO.eliminar(u);
+        return "index";
     }
+
 
     /* GET para registrar un usuario */
     @RequestMapping(value = "/registro", method = RequestMethod.GET)
